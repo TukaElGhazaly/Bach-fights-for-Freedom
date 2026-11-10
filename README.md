@@ -73,20 +73,20 @@ python -m http.server 8000
 
 ## Working with AI
 
-- **Coding agents used:** Claude Code, model [name]
+- **Coding agents used:** Claude Code, model Claude Opus 5.5 (`claude-opus-5-5`)
 - **Key prompts** (two to five that really moved the project):
-  1. [Prompt 1]
-  2. [Prompt 2]
-  3. [Prompt 3]
+  1. "The 2D simulation is nice and perfect. However, I want a home screen with bars: history and context about Bach and the duke, the simulation, and a bar for a game."
+  2. "Make the demons steal the music sheet to add more challenge. Also make the home screen have floating notes, but they get distorted and change colours."
+  3. "When the user is about to escape, make the demons pull the users harder, and the users have to press E multiple times to escape. Try to make it multiplayer with a QR code."
 
-**Reflection** (150 words at most): [What unlocked progress? Where did the agent get stuck or go sideways? What would you do differently next time?]
+**Reflection** (150 words at most): What unlocked progress was settling the 2D simulation first: once the daemon's rules worked in the plan and section drawings, the agent could reuse the same daemon for the home screen and the game. Short, concrete prompts about one mechanic at a time (stolen pages, pressing E to break free) worked better than broad requests. The agent went sideways when a feature depended on where the page was hosted: multiplayer only works through Claude's shared room, so on a plain static host the race falls back to single-player. Repeatedly asking for a fresh link to test each change also slowed things down. Next time I would decide the hosting first, keep the project in Git from day one instead of one large uploaded file, and write the daemon's rules down as a short spec before asking for the game layer on top of them.
 
 ## Credits, assets, licenses
 
 - **Fonts:** IM Fell English, JetBrains Mono, Schibsted Grotesk, via Google Fonts, SIL Open Font License 1.1
-- **Data:** historical frame (Bach held in the Weimar *Landrichterstube*, 6 Nov to 2 Dec 1717) from common biographical sources [add your source]
+- **Data:** historical frame (Bach held in the Weimar *Landrichterstube*, 6 Nov to 2 Dec 1717) from Christoph Wolff, *Johann Sebastian Bach: The Learned Musician* (W. W. Norton, 2000), and the Bach-Archiv Leipzig; the link to the *Well-Tempered Clavier* is a legend (Ernst Ludwig Gerber, 1790), not a documented fact
 - **Images and sounds:** music by J. S. Bach (public domain): Prelude in C major BWV 846, Cello Suite No. 1 Prelude BWV 1007, Minuet in G BWV Anh. 114 (now usually credited to Christian Petzold), Jesu, Joy of Man's Desiring BWV 147, Toccata in D minor BWV 565. Simplified arrangements, synthesised in the browser. All drawings are generated in code. All visitors and characters are invented.
 - **Third-party code:** qrcode-generator by Kazuhiko Arase, MIT License
-- **This repo:** [MIT, CC-BY]
+- **This repo:** code under the MIT License; texts and drawings under CC BY 4.0
 
 The daemon is the spirit of the court's routine, not a portrait of the duke.
