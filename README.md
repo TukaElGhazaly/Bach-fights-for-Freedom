@@ -66,9 +66,10 @@ In November 1717 Duke Wilhelm Ernst locked his court musician, Johann Sebastian 
 ```sh
 git clone https://github.com/TukaElGhazaly/Bach-fights-for-Freedom.git
 cd Bach-fights-for-Freedom
-# open "Bach's Cell.html" in a browser, or serve the folder:
-python -m http.server 8000
-# then visit http://localhost:8000/Bach's%20Cell.html
+npm install
+npm run dev
+# opens http://localhost:8000/Bach%27s%20Cell.html
+# (or simply open "Bach's Cell.html" in a browser)
 ```
 
 ## Working with AI

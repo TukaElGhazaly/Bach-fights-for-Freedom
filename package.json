@@ -1,0 +1,14 @@
+{
+  "name": "bach-fights-for-freedom",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Bach's Cell: a daemon of ducal routine traps the music in one bar and keeps only the last visitor inside.",
+  "license": "MIT",
+  "scripts": {
+    "dev": "http-server -p 8000 -c-1 -o \"/Bach%27s%20Cell.html\"",
+    "start": "npm run dev"
+  },
+  "devDependencies": {
+    "http-server": "14.1.1"
+  }
+}
