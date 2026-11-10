@@ -14,7 +14,7 @@ A daemon of ducal routine traps the music in one bar and keeps only the last vis
 
 ## Links
 
-- **Live demo:** [your GitHub Pages link, e.g. https://tukaelghazaly.github.io/Bach-fights-for-Freedom/]
+- **Live demo:** https://tukaelghazaly.github.io/Bach-fights-for-Freedom/Bach%27s%20Cell.html
 - **Source repo:** https://github.com/TukaElGhazaly/Bach-fights-for-Freedom
 - **Miro frame:** https://miro.com/app/board/uXjVHn1RS88=/?moveToWidget=3458764689890548590
 - **60-second showreel:** on the Miro frame
@@ -57,7 +57,7 @@ In November 1717 Duke Wilhelm Ernst locked his court musician, Johann Sebastian 
 ## Technical implementation
 
 - **Frontend:** a single HTML file, vanilla JavaScript, SVG/CSS drawings and Canvas 2D for the game; Web Audio API for the synthesised piano and distortion, Web Speech API for the spoken names.
-- **Hosting:** [GitHub Pages, a static file needs no server]
+- **Hosting:** GitHub Pages, because the project is one static HTML file and needs no server
 - **Data sources and APIs:** none at runtime. Multiplayer races use the hosting page's shared room (`window.claude.use('room')`) when available; without it the game runs single-player.
 - **Models while it runs:** none. The daemon's decisions are rule-based.
 - **Notable libraries:** qrcode-generator 1.4.4 (from cdnjs) for the race QR code.
